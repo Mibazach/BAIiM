@@ -3,7 +3,7 @@
 
 https://www.docker.com/products/docker-desktop/ - potrzebny do zestawienia aplikacji JuiceShop od OWASP
 
-https://portswigger.net/burp/releases/professional-community-2023-10-3-7 - narzędzie do analizy i modyfikacji zapytań
+https://portswigger.net/burp/releases/professional-community-2023-10-3-7 - narzędzie do analizy i modyfikacji zapytań (z rozwijanej listy wybrać 'community edition')
 
 https://github.com/juice-shop/juice-shop#from-sources -  repo podatnej aplikacji internetowej JuiceShop 
 
