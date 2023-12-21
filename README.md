@@ -32,23 +32,23 @@ Następnie rejestrujemy się podając dane (nie ma znaczenia jakie dane będą, 
 
 Po poprawnej rejestracji zostajemy przekierowani na panel logowania - logujemy się na stronę. 
 
-
+![image](https://github.com/Mibazach/BAIiM/blob/main/Logowanie.jpg)
 
 Później przechodzimy do “Account” i naciskamy guzik z podanym wcześniej emailem.
 
 Naszym oczom ukazuje się panel profilu. Skupimy się na polu “Username”, aby móc przeprowadzić atak CSRF i podmienić nazwę nieświadomego użytkownika. Jednak przygotowanie takiego ataku wymaga stworzenia jakiejś strony, która wykonuje preparację fałszywego zapytania - zróbmy to tak, aby ofiara po wejściu na stworzoną stronę nieświadomie dokonała tej zmiany.
 
-
+![image](https://github.com/Mibazach/BAIiM/blob/main/nazwa.jpg)
 
 W tym celu wykorzystamy zapytanie POST, które wysyłane jest do serwera z informacją o zmianie nazwy użytkownika.
 
 Musimy kolejno odnaleźć tag ‘form’, który służy do aktualizowania nazwy użytkownika, skopiować kod html do dowolnego edytora kodu i zapisać plik z rozszerzeniem .html, aby móc go otworzyć przez przeglądarkę. Kod wygląda w następujący sposób:
 
-
+![image](https://github.com/Mibazach/BAIiM/blob/main/Form.jpg)
 
 Najważniejszy jest formularz dotyczący zmiany nazwy użytkownika - kod można okroić z niepotrzebnych tagów: 
 
-
+![image](https://github.com/Mibazach/BAIiM/blob/main/Okrojony%20form.jpg)
 
 Teraz pozostaje zmodyfikować istniejący kod tak, aby przeprowadzić atak. Chcemy aby:
 1. Nasz forms był niewidoczny,
